@@ -101,24 +101,34 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 							break;
 						case 8:
 							pStage->MoveToAbsolute(x, y);
+							break;
 						case 9:
 							pStage->MoveXAtVelocityUntilEncoderReference(x);
+							break;
 						case 10:
 							pStage->MoveXToAbsolute(x);
+							break;
 						case 11:
 							pStage->MoveYAtVelocityUntilEncoderReference(x);
+							break;
 						case 12:
 							pStage->MoveYToAbsolute(x);
+							break;
 						case 13:
 							pStage->RestoreReference();
+							break;
 						case 14:
 							pStage->SetPosition(x, y);
+							break;
 						case 15:
 							pStage->SetReference();
+							break;
 						case 16:
 							pStage->SkewAbout();
+							break;
 						case 17:
 							pStage->SkewSecond();
+							break;
 						default:
 							cout << "No function was called" << endl;
 							break;
