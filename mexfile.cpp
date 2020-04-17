@@ -2,9 +2,9 @@
 #include <iostream>
 #include <stdlib.h>
 #include <Windows.h>
-//#pragma warning (disable : 4146)
+#pragma warning (disable : 4146)
 
-//#import "C:\Program Files\Prior Scientific\Prior Software\Prior.dll" no_namespace named_guids
+#import "C:\Program Files\Prior Scientific\Prior Software\Prior.dll" no_namespace named_guids
 
 using namespace std;
 
