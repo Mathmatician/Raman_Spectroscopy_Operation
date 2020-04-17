@@ -10,31 +10,31 @@ using namespace std;
 
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 {
-    mexPrintf("Test\n");
-   /*------------------------------------------------------------------
-   | Parameters from matlab that will determine which function to run |
-   -------------------------------------------------------------------*/
+	mexPrintf("Test\n");
+	/*------------------------------------------------------------------
+	| Parameters from matlab that will determine which function to run |
+	-------------------------------------------------------------------*/
 	int func_num = mxGetScalar(prhs[0]);
 
 	/*------------------------------------------------------------------------------------------------------------------------------------
 	| Both x and y will be the two main parameters. If a function requiring only one parameter is called, x will serve as that parameter |
 	-------------------------------------------------------------------------------------------------------------------------------------*/
-    double x, y;
-    if (nlhs >= 3)
-    {
-        x = mxGetScalar(prhs[1]);
-        y = mxGetScalar(prhs[2]);
-    }
-    else if (nlhs == 2)
-    {
-        x = mxGetScalar(prhs[1]);
-    }
+	double x, y;
+	if (nlhs >= 3)
+	{
+		x = mxGetScalar(prhs[1]);
+		y = mxGetScalar(prhs[2]);
+	}
+	else if (nlhs == 2)
+	{
+		x = mxGetScalar(prhs[1]);
+	}
 
 
 
 	/*-----------
-	| Main Code |
-	------------*/
+| Main Code |
+------------*/
 
 	long port = 1;
 	HRESULT hRes;
