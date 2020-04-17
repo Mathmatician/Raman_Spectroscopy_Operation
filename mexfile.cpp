@@ -79,7 +79,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 					{
 						case 1:
 							pStage->GetPosition(&x, &y);
-                            mexPrintf("(%d , %d)\n", x, y);
+                            				mexPrintf("(%d , %d)\n", x, y);
 							break;
 						case 2:
 							pStage->MoveAtVelocity(x, y);
