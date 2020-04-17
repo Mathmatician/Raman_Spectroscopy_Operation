@@ -33,8 +33,8 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 
 
 	/*-----------
-| Main Code |
-------------*/
+	| Main Code |
+	------------*/
 
 	long port = 1;
 	HRESULT hRes;
