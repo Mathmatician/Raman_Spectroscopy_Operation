@@ -10,7 +10,6 @@ using namespace std;
 
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 {
-	mexPrintf("Test\n");
 	/*------------------------------------------------------------------
 	| Parameters from matlab that will determine which function to run |
 	-------------------------------------------------------------------*/
